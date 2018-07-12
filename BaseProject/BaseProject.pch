@@ -1,0 +1,40 @@
+//
+//  BaseProject.pch
+//  BaseProject
+//
+//  Created by wonderC on 2017/2/7.
+//  Copyright © 2017年 wonderC. All rights reserved.
+//
+
+#ifndef BaseProject_pch
+#define BaseProject_pch
+
+#import "AppDelegate.h"
+
+//运行时
+#import <objc/runtime.h>
+
+//宏
+#import "SCAppMacro.h"
+#import "SCColorFontMacro.h"
+#import "SCNotifiCationConst.h"
+#import "SCRequestURLMacro.h"
+
+//第三方库
+#import "AFNetworking.h"
+#import "YYKit.h"
+#import "SDImageCache.h"
+#import "FMDB.h"
+#import "MJRefresh.h"
+#import "Masonry.h"
+
+//分类
+#import "UIButton+SCButton.h"
+#import "UILabel+SCLable.h"
+
+//单例类
+#import "SCDatabaseManager.h"
+#import "SCNetWorkManager.h"
+
+
+#endif /* BaseProject_pch */
