@@ -9,23 +9,6 @@
 #import <UIKit/UIKit.h>
 
 /**
- 只有颜色的Label
-
- @param frame frame
- @param color color
- @return color label
- */
-UIKIT_STATIC_INLINE UILabel *lineLabelWithRect(CGRect frame,UIColor *color){
-    
-    UILabel *lineLale = [[UILabel alloc] initWithFrame:frame];
-    
-    if (!color) {lineLale.backgroundColor = [UIColor lightGrayColor];}
-    else{lineLale.backgroundColor = color;}
-    
-    return lineLale;
-};
-
-/**
  默认居中对齐
  */
 @interface UILabel (SCLable)

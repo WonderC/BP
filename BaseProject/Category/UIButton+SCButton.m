@@ -21,20 +21,20 @@
     
     UIButton *button = [self buttonWithFrame:frame title:title];
     [button setTitleColor:color forState:UIControlStateNormal];
-    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
 + (instancetype)buttonWithFrame:(CGRect)frame title:(NSString *)title titleColor:(UIColor *)color bgColor:(UIColor *)bgcolor target:(id)target action:(SEL)action{
     
-    UIButton *button = [self buttonWithFrame:frame title:title titleColor:color target:target action:action];
+    UIButton *button = [self buttonWithFrame:frame title:title titleColor:color target:self action:action];
     [button setBackgroundColor:bgcolor];
     return button;
 }
 
 + (instancetype)buttonWithFrame:(CGRect)frame title:(NSString *)title font:(NSInteger)font titleColor:(UIColor *)color bgColor:(UIColor *)bgcolor target:(id)target action:(SEL)action{
     
-    UIButton *button = [self buttonWithFrame:frame title:title titleColor:color bgColor:bgcolor target:target action:action];
+    UIButton *button = [self buttonWithFrame:frame title:title titleColor:color bgColor:bgcolor target:self action:action];
     button.titleLabel.font = [UIFont systemFontOfSize:font];
     return button;
 }
@@ -49,7 +49,7 @@
 + (instancetype)buttonWithFrame:(CGRect)frame attributeTitle:(NSAttributedString *)title target:(id)target action:(SEL)action{
     
     UIButton *button = [self buttonWithFrame:frame attributeTitle:title ];
-    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
